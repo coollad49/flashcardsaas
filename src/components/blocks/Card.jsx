@@ -1,22 +1,6 @@
 'use client'
 import { AnimatePresence, motion } from "framer-motion";
-import {useState} from "react"
-const Icon = ({ className, ...rest }) => {
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className={className}
-        {...rest}
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-      </svg>
-    );
-  };
-  
+import {TextGenerateEffect} from '@/components/ui/text-generate-effect'  
 
 const Card = ({ answer, question, children, clicked, onclick}) => {
     
@@ -44,7 +28,7 @@ const Card = ({ answer, question, children, clicked, onclick}) => {
           </div>
           <div className="absolute top-0 left-0 m-2">
             <h2 className={`dark:text-white text-xl opacity-0 ${clicked? 'opacity-100 text-white ' : ''}   z-10 text-black font-bold transition duration-200`}>
-              {answer}
+              {clicked ? <TextGenerateEffect duration={2} filter={false} words={answer} /> : ''}
             </h2>
           </div>
           
