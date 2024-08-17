@@ -1,8 +1,12 @@
+import { CanvasReveal } from "@/components/CanvasReveal";
+import VanishInput from "@/components/VanishInput";
 
 const generate = () => {
   return (
-    <div>
-        hatyyek
+    <div className="gap-3 overflow-auto no-scrollbar">
+
+      <VanishInput/>
+      <CanvasReveal/>
     </div>
   )
 }
