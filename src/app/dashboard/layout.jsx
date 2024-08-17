@@ -25,7 +25,7 @@ export default function DashboardLayout({children}) {
               ))}
             </div>
           </div>
-          <div>
+          {/* <div>
             <SidebarLink
               link={{
                 label: "Manu Arora",
@@ -41,7 +41,7 @@ export default function DashboardLayout({children}) {
                 ),
               }}
             />
-          </div>
+          </div> */}
         </SidebarBody>
       </Sidebar>
       <div className="flex flex-1">
