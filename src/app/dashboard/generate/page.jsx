@@ -36,7 +36,7 @@ const Generate = () => {
     console.log(flashcards)
   }
   return (
-    <div className="gap-3 overflow-auto no-scrollbar w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative">
+    <div className="gap-3 overflow-auto no-scrollbar h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative">
       
       <div>
         <PlaceholdersAndVanishInput
